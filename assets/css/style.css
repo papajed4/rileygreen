@@ -1,0 +1,181 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   HTML
+========================================================== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+    line-height: 1.1;
+    color: var(--color-white);
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+span{
+    display: inline-block;
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-primary);
+}
+
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+ul,
+ol{
+    list-style: none;
+}
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+input,
+textarea,
+select{
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+    width: min(95%, var(--container-width));
+    margin-inline: auto;
+}
+
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+section{
+    width: 100%;
+}
+
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}

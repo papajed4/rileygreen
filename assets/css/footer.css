@@ -1,0 +1,83 @@
+/*==========================================================
+    FOOTER
+==========================================================*/
+
+#footer{
+
+    padding:70px 0 40px;
+
+    background:var(--color-bg);
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:34px;
+
+    margin-bottom:38px;
+
+}
+
+.footer-social a{
+
+    color:#ffffff;
+
+    font-size:1.7rem;
+
+    transition:.25s;
+
+}
+
+.footer-social a:hover{
+
+    color:var(--color-primary);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#d5c4a2;
+
+    font-size:.9rem;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:#ffffff;
+
+    font-size:.82rem;
+
+}
+
+.footer-links span{
+
+    color:#777;
+
+}
