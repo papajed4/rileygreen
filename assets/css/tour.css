@@ -1,0 +1,386 @@
+/*=====================================
+  TOUR HERO
+======================================*/
+
+#tour-hero{
+
+    background: var(--color-bg);
+
+    padding: 120px 0 80px;
+
+    border-bottom: 1px solid rgba(255,255,255,.12);
+
+}
+
+.tour-hero-content{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.tour-hero-content h1{
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(4rem, 10vw, 6.5rem);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    color: var(--color-accent);
+
+    text-transform: uppercase;
+
+    margin: 0;
+
+}
+
+/*=====================================
+  RESPONSIVE
+======================================*/
+
+@media (max-width:992px){
+
+    #tour-hero{
+
+        padding: 100px 0 70px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    #tour-hero{
+
+        padding: 90px 0 60px;
+
+    }
+
+    .tour-hero-content h1{
+
+        font-size: clamp(3rem, 12vw, 4.5rem);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    #tour-hero{
+
+        padding: 80px 0 50px;
+
+    }
+
+}
+
+
+/*=====================================
+TOUR DATES
+======================================*/
+
+#tour-page{
+
+    padding:0 0 120px;
+
+}
+
+.tour-list{
+
+    width:100%;
+
+}
+
+.tour-row{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr 230px auto;
+
+    gap:40px;
+
+    align-items:center;
+
+    padding:26px 10px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.tour-row:first-child{
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.tour-date h4{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+}
+
+.tour-event h3{
+
+    margin:0 0 8px;
+
+    font-size:1.45rem;
+
+    color:var(--color-accent);
+
+    font-weight:500;
+
+}
+
+.tour-event p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.45);
+
+    line-height:1.5;
+
+}
+
+.tour-city{
+
+    color:var(--color-accent);
+
+    font-size:1.3rem;
+
+}
+
+.tour-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    justify-self:end;
+
+}
+
+.tour-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:120px;
+
+    height:42px;
+
+    background:#fff;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.tour-btn:hover{
+
+    background:var(--color-accent);
+
+}
+
+.tour-buttons .tour-btn:first-child{
+
+    width:90px;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+    .tour-row{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+        padding:28px 0;
+
+    }
+
+    .tour-buttons{
+
+        justify-self:start;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .tour-buttons{
+
+        flex-wrap:wrap;
+
+        width:100%;
+
+    }
+
+    .tour-btn{
+
+        width:100% !important;
+
+    }
+
+}
+
+/*=====================================
+TOUR CTA
+======================================*/
+
+#tour-cta{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+}
+
+.tour-cta-content{
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.tour-cta-content h2{
+
+    margin-bottom: 20px;
+
+    font-size: clamp(2rem,4vw,3rem);
+
+}
+
+.tour-cta-content p{
+
+    margin-bottom: 40px;
+
+    color: var(--color-text-muted);
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+}
+
+.tour-cta-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 18px 42px;
+
+    background: transparent;
+
+    border: 1px solid #fff;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+
+}
+
+.tour-cta-btn:hover{
+
+    background: #fff;
+
+    color: #111;
+
+    transform: translateY(-2px);
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    #tour-cta{
+
+        padding: 90px 0;
+
+    }
+
+    .tour-cta-btn{
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
+
+.tour-cta-email{
+
+    display: inline-block;
+
+    margin-top: 24px;
+
+    color: var(--color-accent);
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    transition: .3s ease;
+
+}
+
+.tour-cta-email:hover{
+
+    color: #fff;
+
+    text-decoration: underline;
+
+}
