@@ -1,0 +1,38 @@
+{
+    "name": "Riley Green - Official Website",
+    "short_name": "Riley Green",
+    "description": "Official website of country music star Riley Green. Find tour dates, music, videos, VIP experiences, and more.",
+    "start_url": "https://rileygreenmusic.site/",
+    "display": "standalone",
+    "background_color": "#343839",
+    "theme_color": "#d3bf92",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "https://rileygreenmusic.site/favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon",
+            "purpose": "any"
+        },
+        {
+            "src": "https://rileygreenmusic.site/assets/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "https://rileygreenmusic.site/assets/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "https://rileygreenmusic.site/assets/icons/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [],
+    "prefer_related_applications": false
+}

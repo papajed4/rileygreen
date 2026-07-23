@@ -1,0 +1,21 @@
+# ==========================================================
+# ROBOTS.TXT - Riley Green Official Website
+# ==========================================================
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow crawling of assets (optional, but allows images to show in search)
+# Allow assets so images can appear in Google Image Search
+# Disallow: /assets/
+
+# Specify sitemap location
+Sitemap: https://rileygreenmusic.site/sitemap.xml
+
+# Crawl-delay (optional - be polite to servers)
+# Crawl-delay: 5
+
+# ==========================================================
+# END
+# ==========================================================

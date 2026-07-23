@@ -97,3 +97,54 @@
     }
 
 }
+
+/*=====================================
+404 PAGE - CONTACT OPTION
+======================================*/
+
+.error-contact {
+    margin-top: 45px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.error-contact-text {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: rgba(255,255,255,.65);
+}
+
+.error-contact .cta-btn {
+    margin-bottom: 25px;
+}
+
+.error-contact .secondary-btn {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
+}
+
+.error-contact .secondary-btn:hover {
+    background: var(--color-accent);
+    color: #111;
+}
+
+.error-email {
+    display: inline-block;
+    color: rgba(255,255,255,.65);
+    font-size: .95rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.error-email:hover {
+    color: var(--color-accent);
+}
+
+@media (max-width:768px) {
+    .error-contact .cta-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+}

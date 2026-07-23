@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- ==========================================================
+    HOMEPAGE
+    ========================================================== -->
+    <url>
+        <loc>https://rileygreenmusic.site/</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- ==========================================================
+    MAIN PAGES
+    ========================================================== -->
+    <url>
+        <loc>https://rileygreenmusic.site/tour.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://rileygreenmusic.site/music.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://rileygreenmusic.site/videos.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://rileygreenmusic.site/about.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- ==========================================================
+    SECONDARY PAGES
+    ========================================================== -->
+    <url>
+        <loc>https://rileygreenmusic.site/vip.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://rileygreenmusic.site/buford-bonds.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+
+    <url>
+        <loc>https://rileygreenmusic.site/ducks-club.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+
+    <!-- ==========================================================
+    NOTE: 404.html is NOT included in the sitemap
+    ========================================================== -->
+
+</urlset>
