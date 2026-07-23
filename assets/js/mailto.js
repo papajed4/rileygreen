@@ -1,11 +1,34 @@
+// ==========================================================
+// EMAIL CONFIGURATION
+// ==========================================================
 const EMAIL = "info@management-inc.site";
 
-function openGmail(subject, body) {
-    const url =
-        `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(url, '_blank');
+// ==========================================================
+// DETECT MOBILE DEVICE
+// ==========================================================
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
+// ==========================================================
+// OPEN EMAIL (SMART DETECTION)
+// ==========================================================
+function openGmail(subject, body) {
+    const mailtoLink = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmailWebLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    if (isMobileDevice()) {
+        // MOBILE: Open native mail app (Gmail, Apple Mail, etc.)
+        window.location.href = mailtoLink;
+    } else {
+        // DESKTOP: Open Gmail in a new browser tab
+        window.open(gmailWebLink, '_blank');
+    }
+}
+
+// ==========================================================
+// ALL EMAIL TEMPLATES
+// ==========================================================
 const emailTemplates = {
 
     // ---------- BOOKING ----------
@@ -23,7 +46,6 @@ Event Location:
 Expected Attendance:
 
 Additional Information:
-
 
 Thank you,`
     },
@@ -59,7 +81,6 @@ Purpose of Inquiry:
 
 Additional Details:
 
-
 Thank you,`
     },
 
@@ -73,7 +94,6 @@ I have a question regarding:
 Name:
 
 Message:
-
 
 Thank you,`
     },
@@ -109,7 +129,6 @@ Thank you,`
     },
 
     // ---------- TOUR / EVENT SPECIFIC ----------
-    // This is used by the tour VIP/Tickets buttons
     tour: {
         subject: "Tour Inquiry - Riley Green",
         body: `Hello,
@@ -130,11 +149,13 @@ Thank you.`
 
 };
 
-// ---------- Universal: Any element with data-type ----------
-// Works for contact cards, management buttons, VIP booking buttons, donation buttons, etc.
+// ==========================================================
+// UNIVERSAL: Any element with data-type
+// Works for contact cards, management buttons, VIP buttons, etc.
+// ==========================================================
 document.querySelectorAll('[data-type]').forEach(el => {
 
-    el.addEventListener("click", function(e) {
+    el.addEventListener("click", function (e) {
         e.preventDefault();
 
         const type = this.dataset.type;
@@ -145,7 +166,7 @@ document.querySelectorAll('[data-type]').forEach(el => {
             return;
         }
 
-        // Special handling for tour buttons (which have data-event, data-date, data-location)
+        // Special handling for tour buttons (data-event, data-date, data-location)
         const eventName = this.dataset.event;
         const date = this.dataset.date;
         const location = this.dataset.location;
@@ -153,7 +174,7 @@ document.querySelectorAll('[data-type]').forEach(el => {
         let subject = template.subject;
         let body = template.body;
 
-        // If this is a tour button with event data, customize the body
+        // If this is a tour button with event data
         if (eventName && date && location) {
             const inquiryType = this.textContent.trim().toUpperCase();
             subject = `${inquiryType} Inquiry - ${eventName}`;
@@ -173,7 +194,7 @@ Number of Guests:
 Thank you.`;
         }
 
-        // If the button has a package name (VIP packages), add it to the subject
+        // If the button has a package name (VIP packages)
         const packageName = this.dataset.package;
         if (packageName && type === 'vip') {
             subject = `VIP Inquiry - ${packageName}`;
@@ -194,7 +215,7 @@ Thank you.`;
 
         // If the button has a fund type (Buford Bonds support cards)
         const fundType = this.dataset.fund;
-        if (fundType && type === 'general') {
+        if (fundType && type === 'donation') {
             subject = `Buford Bonds Fund - ${fundType}`;
             body = `Hello,
 
@@ -213,11 +234,12 @@ Thank you.`;
 
 });
 
-// ---------- Tour Buttons (Legacy / Fallback) ----------
-// Also handles any .tour-btn elements that might not have data-type
+// ==========================================================
+// TOUR BUTTONS (Fallback / Legacy)
+// ==========================================================
 document.querySelectorAll(".tour-btn").forEach(btn => {
 
-    btn.addEventListener("click", function(e) {
+    btn.addEventListener("click", function (e) {
 
         e.preventDefault();
 
@@ -225,7 +247,7 @@ document.querySelectorAll(".tour-btn").forEach(btn => {
         const date = this.dataset.date;
         const location = this.dataset.location;
 
-        // Skip if this button was already handled by the data-type listener
+        // Skip if this button was already handled by data-type listener
         if (this.dataset.type) return;
 
         const type = this.textContent.trim().toLowerCase();
@@ -252,8 +274,8 @@ Thank you.`;
 
 });
 
-// ---------- Email link fallback ----------
-// If someone clicks a direct mailto: link, it will still work as a fallback
-// but we prefer the Gmail method above
-console.log('📧 mailto.js loaded with templates for:',
-    Object.keys(emailTemplates).join(', '));
+// ==========================================================
+// LOG READY
+// ==========================================================
+console.log('📧 mailto.js loaded with:', Object.keys(emailTemplates).join(', '));
+console.log('📱 Device detected:', isMobileDevice() ? 'Mobile (using mail app)' : 'Desktop (using Gmail web)');
