@@ -21,7 +21,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -33,7 +32,6 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header id="header">
         <div class="container">
@@ -165,14 +163,8 @@
         </div>
     </aside>
 
-
-
     <main>
-
-        <!--=====================================
-            VIDEO HERO
-        =====================================-->
-
+        <!--VIDEO HERO-->
         <section id="video-hero">
 
             <div class="container">
@@ -187,19 +179,96 @@
 
         </section>
 
-
-
-        <!--=====================================
-            FEATURED VIDEO
-        =====================================-->
-
-        <section id="featured-video">
+        <!--VIDEO GALLERY-->
+        <section id="video-gallery">
 
             <div class="container">
 
-                <div class="featured-video-wrapper">
+                <div class="video-grid">
 
-                    <!-- YouTube Embed -->
+                    <!-- Video 1 -->
+                    <div class="video-card" data-video="5SCJM6aYsK0">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5SCJM6aYsK0%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="Think As You Drunk (Official Video)">
+
+                        <h3>
+
+                            Think As You Drunk (Official Video)
+
+                        </h3>
+
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card" data-video="OkktfeAR-Rk">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FOkktfeAR-Rk%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="Worst Way">
+
+                        <h3>
+
+                            Worst Way
+
+                        </h3>
+
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card" data-video="c1yHiaOlj0Q">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fc1yHiaOlj0Q%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="Jesus Saves">
+
+                        <h3>
+
+                            Jesus Saves
+
+                        </h3>
+
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-card" data-video="W1CUG_hCXgA">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FW1CUG_hCXgA%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="Don't Mind If I Do">
+
+                        <h3>
+
+                            Don't Mind If I Do (Lyric Video)
+
+                        </h3>
+
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="video-card" data-video="Dm2TSMerGPQ">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDm2TSMerGPQ%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="You Look Like You Love Me">
+
+                        <h3>
+
+                            You Look Like You Love Me (Official Video)
+
+                        </h3>
+
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="video-card" data-video="zhaTJhpzfm8">
+
+                        <img src="https://www.rileygreenmusic.com/_next/image?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzhaTJhpzfm8%2Fmaxresdefault.jpg&w=640&q=75"
+                            alt="Worst Way (Lyric Video)">
+
+                        <h3>
+
+                            Worst Way (Lyric Video)
+
+                        </h3>
+
+                    </div>
 
                 </div>
 
@@ -207,90 +276,70 @@
 
         </section>
 
+        <!--  VIDEO MODAL-->
+        <div id="video-modal">
 
+            <div class="modal-overlay"></div>
 
-        <!--=====================================
-            VIDEO GRID
-        =====================================-->
+            <div class="modal-content">
 
-        <section id="video-grid">
+                <button id="close-video">
 
-            <div class="container">
+                    <i class="fa-solid fa-xmark"></i>
 
-                <div class="videos-grid">
+                </button>
 
-                    <!-- Video Card 1 -->
-
-                    <!-- Video Card 2 -->
-
-                    <!-- Video Card 3 -->
-
-                    <!-- Video Card 4 -->
-
-                    <!-- Video Card 5 -->
-
-                    <!-- Video Card 6 -->
-
-                    <!-- etc... -->
-
-                </div>
+                <div id="video-player"></div>
 
             </div>
 
-        </section>
+        </div>
 
-
-
-        <!--=====================================
-            VIDEO CTA
-        =====================================-->
-
+        <!--VIDEO CTA-->
         <section id="video-cta">
 
             <div class="container">
 
                 <div class="video-cta-content">
 
-                    <h2>Watch More</h2>
+                    <h2>
+                        Watch More Riley Green
+                    </h2>
 
                     <p>
-
-                        Watch Riley Green's latest music videos,
-                        live performances and exclusive content.
-
+                        Explore more official music videos, live performances, acoustic sessions, and behind-the-scenes
+                        content on Riley Green's official YouTube channel.
                     </p>
 
+                    <a href="https://www.youtube.com/@RileyGreenMusic" target="_blank" rel="noopener noreferrer"
+                        class="cta-btn">
 
+                        <i class="fa-brands fa-youtube"></i>
 
-                    <div class="video-platform">
+                        <span>WATCH ON YOUTUBE</span>
 
-                        <a href="#" target="_blank">
+                    </a>
 
-                            <i class="fa-brands fa-youtube"></i>
+                    <div class="management-contact">
 
-                            <span>YouTube</span>
-
-                        </a>
-
-                    </div>
-
-
-
-                    <div class="video-contact">
+                        <h3>
+                            Management & Business Inquiries
+                        </h3>
 
                         <p>
-
-                            Need help or have a business inquiry?
-
+                            For booking requests, media inquiries, partnerships, and other business opportunities,
+                            please contact Riley Green's management team.
                         </p>
 
-                        <a href="#" class="video-contact-btn email-link" data-type="business">
+                        <button class="cta-btn secondary-btn" data-type="business">
 
                             CONTACT MANAGEMENT
 
-                        </a>
+                        </button>
 
-                        <a href="mailto:info@inc-management.site" class="video-email">
+                        <br>
+
+                        <a href="mailto:info@inc-management.site" class="management-email">
 
                             info@inc-management.site
 
@@ -305,8 +354,6 @@
         </section>
 
     </main>
-
-
 
     <!--FOOTER=-->
     <footer id="footer">
@@ -360,14 +407,10 @@
         </div>
     </footer>
 
-
-
-    <!--=====================================
-        JAVASCRIPT
-    =====================================-->
-
+    <!--JAVASCRIPT-->
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/mailto.js"></script>
+    <script src="assets/js/video.js"></script>
 
 </body>
 
