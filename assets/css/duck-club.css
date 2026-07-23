@@ -1,0 +1,707 @@
+/*=====================================
+DUCKS HERO
+======================================*/
+
+#ducks-hero{
+
+    padding: 120px 0 80px;
+
+    background: var(--color-bg);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+}
+
+.ducks-hero-content{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.ducks-hero-content h1{
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(4rem, 10vw, 6.5rem);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media (max-width:992px){
+
+    #ducks-hero{
+
+        padding: 100px 0 70px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    #ducks-hero{
+
+        padding: 90px 0 60px;
+
+    }
+
+    .ducks-hero-content h1{
+
+        font-size: clamp(3rem, 12vw, 4.5rem);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    #ducks-hero{
+
+        padding: 80px 0 50px;
+
+    }
+
+}
+
+/*=====================================
+ABOUT DUCKS CLUB
+======================================*/
+
+#about-ducks{
+
+    padding: 120px 0;
+
+}
+
+.about-ducks-content{
+
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.about-ducks-content span{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+
+}
+
+.about-ducks-content h2{
+
+    margin-bottom: 35px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.4rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.about-ducks-content p{
+
+    margin-bottom: 25px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+.about-ducks-content p:last-child{
+
+    margin-bottom: 0;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    #about-ducks{
+
+        padding: 90px 0;
+
+    }
+
+    .about-ducks-content p{
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*=====================================
+WHAT WE DO
+======================================*/
+
+#ducks-mission{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.mission-header{
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+}
+
+.mission-header span{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+
+}
+
+.mission-header h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.3rem);
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: var(--color-accent);
+
+}
+
+.mission-header p{
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.9;
+
+}
+
+.mission-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.mission-card{
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .3s ease;
+
+}
+
+.mission-card:hover{
+
+    transform: translateY(-8px);
+
+    border-color: rgba(255,255,255,.18);
+
+}
+
+.mission-icon{
+
+    margin-bottom: 25px;
+
+    font-size: 2.2rem;
+
+    color: var(--color-secondary);
+
+}
+
+.mission-card h3{
+
+    margin-bottom: 18px;
+
+    font-family: var(--font-heading);
+
+    font-size: 1.5rem;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.mission-card p{
+
+    color: rgba(255,255,255,.72);
+
+    line-height: 1.8;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+    .mission-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #ducks-mission{
+
+        padding: 90px 0;
+
+    }
+
+    .mission-header{
+
+        margin-bottom: 50px;
+
+    }
+
+}
+
+/*=====================================
+MEMBER BENEFITS
+======================================*/
+
+#member-benefits{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.benefits-header{
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+}
+
+.benefits-header span{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+
+}
+
+.benefits-header h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.3rem);
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: var(--color-accent);
+
+}
+
+.benefits-header p{
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.9;
+
+}
+
+.benefits-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.benefit-card{
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .3s ease;
+
+}
+
+.benefit-card:hover{
+
+    transform: translateY(-8px);
+
+    border-color: rgba(255,255,255,.18);
+
+}
+
+.benefit-icon{
+
+    margin-bottom: 25px;
+
+    font-size: 2.2rem;
+
+    color: var(--color-secondary);
+
+}
+
+.benefit-card h3{
+
+    margin-bottom: 18px;
+
+    font-family: var(--font-heading);
+
+    font-size: 1.5rem;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.benefit-card p{
+
+    color: rgba(255,255,255,.72);
+
+    line-height: 1.8;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+    .benefits-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #member-benefits{
+
+        padding: 90px 0;
+
+    }
+
+    .benefits-header{
+
+        margin-bottom: 50px;
+
+    }
+
+}
+
+/*=====================================
+JOIN THE CLUB
+======================================*/
+
+#join-club{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.join-content{
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.join-content span{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+
+}
+
+.join-content h2{
+
+    margin-bottom: 25px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.4rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.join-content p{
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    #join-club{
+
+        padding: 90px 0;
+
+    }
+
+    .join-content p{
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*=====================================
+CONTACT CTA
+======================================*/
+
+#contact-cta{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.contact-cta-content{
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.contact-cta-content h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.2rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.contact-cta-content p{
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+.contact-cta-content .cta-btn{
+
+    margin-bottom: 25px;
+
+}
+
+.management-email{
+
+    display: inline-block;
+
+    color: rgba(255,255,255,.65);
+
+    text-decoration: none;
+
+    font-size: .95rem;
+
+    letter-spacing: 1px;
+
+    transition: color .3s ease;
+
+}
+
+.management-email:hover{
+
+    color: var(--color-accent);
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    #contact-cta{
+
+        padding: 90px 0;
+
+    }
+
+    .contact-cta-content p{
+
+        font-size: 1rem;
+
+    }
+
+    .contact-cta-content .cta-btn{
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}

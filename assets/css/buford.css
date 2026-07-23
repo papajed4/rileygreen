@@ -1,0 +1,647 @@
+/*=====================================
+BUFORD HERO
+======================================*/
+
+#buford-hero{
+
+    padding: 120px 0 80px;
+
+    background: var(--color-bg);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+}
+
+.buford-hero-content{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.buford-hero-content h1{
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(4rem, 10vw, 6.5rem);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media (max-width:992px){
+
+    #buford-hero{
+
+        padding: 100px 0 70px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    #buford-hero{
+
+        padding: 90px 0 60px;
+
+    }
+
+    .buford-hero-content h1{
+
+        font-size: clamp(3rem, 12vw, 4.5rem);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    #buford-hero{
+
+        padding: 80px 0 50px;
+
+    }
+
+}
+
+/*=====================================
+ABOUT THE FUND
+======================================*/
+
+#about-fund{
+
+    padding: 100px 0;
+
+}
+
+.about-fund-content{
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.section-subtitle{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.55);
+
+}
+
+.about-fund-content h2{
+
+    margin-bottom: 25px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.4rem,4vw,3.5rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.about-fund-content p{
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+/*=====================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    #about-fund{
+
+        padding: 80px 0;
+
+    }
+
+    .about-fund-content h2{
+
+        font-size: clamp(2rem,8vw,2.8rem);
+
+    }
+
+    .about-fund-content p{
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*=====================================
+OUR MISSION
+======================================*/
+
+#fund-mission{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.mission-header{
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+}
+
+.mission-header h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.2rem);
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.mission-header p{
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.9;
+
+}
+
+.mission-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.mission-card{
+
+    padding: 40px 35px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .35s ease;
+
+}
+
+.mission-card:hover{
+
+    transform: translateY(-8px);
+
+    border-color: var(--color-accent);
+
+}
+
+.mission-card i{
+
+    margin-bottom: 22px;
+
+    font-size: 2.2rem;
+
+    color: var(--color-accent);
+
+}
+
+.mission-card h3{
+
+    margin-bottom: 16px;
+
+    font-size: 1.4rem;
+
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.mission-card p{
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+
+}
+
+@media (max-width:992px){
+
+    .mission-grid{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    #fund-mission{
+
+        padding: 90px 0;
+
+    }
+
+    .mission-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .mission-header{
+
+        margin-bottom: 50px;
+
+    }
+
+}
+
+/*=====================================
+WAYS TO SUPPORT
+======================================*/
+
+#support-options{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.support-header{
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+}
+
+.support-header h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.2rem);
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.support-header p{
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.9;
+
+}
+
+.support-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.support-card{
+
+    padding: 40px 35px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .35s ease;
+
+}
+
+.support-card:hover{
+
+    transform: translateY(-8px);
+
+    border-color: var(--color-accent);
+
+}
+
+.support-card i{
+
+    margin-bottom: 22px;
+
+    font-size: 2.2rem;
+
+    color: var(--color-accent);
+
+}
+
+.support-card h3{
+
+    margin-bottom: 18px;
+
+    font-size: 1.4rem;
+
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.support-card p{
+
+    margin-bottom: 35px;
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+
+}
+
+.support-card .cta-btn{
+
+    width: 100%;
+
+}
+
+@media(max-width:992px){
+
+    .support-grid{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #support-options{
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .support-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/*=====================================
+HOW TO DONATE
+======================================*/
+
+#how-to-donate{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.donation-content{
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.donation-content h2{
+
+    margin-bottom: 22px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.2rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.donation-content p{
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+@media(max-width:768px){
+
+    #how-to-donate{
+
+        padding: 90px 0;
+
+    }
+
+    .donation-content p{
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*=====================================
+CONTACT CTA
+======================================*/
+
+#contact-cta{
+
+    padding: 120px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.contact-cta-content{
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+.contact-cta-content h2{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.2rem,4vw,3.2rem);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+
+}
+
+.contact-cta-content p{
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+.contact-cta-content .cta-btn{
+
+    margin-bottom: 25px;
+
+}
+
+.management-email{
+
+    display: inline-block;
+
+    color: rgba(255,255,255,.65);
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    transition: color .3s ease;
+
+}
+
+.management-email:hover{
+
+    color: var(--color-accent);
+
+}
+
+@media(max-width:768px){
+
+    #contact-cta{
+
+        padding: 90px 0;
+
+    }
+
+    .contact-cta-content p{
+
+        font-size: 1rem;
+
+    }
+
+    .contact-cta-content .cta-btn{
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
